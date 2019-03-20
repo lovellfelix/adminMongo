@@ -283,7 +283,7 @@ async.forEachOf(connection_list, function (value, key, callback){
     function (err){
         if(err) console.error(err.message);
         // lift the app
-        app.listen(app_port, app_host, function (){
+        app.listen(app_port, function (){
             console.log('adminMongo listening on host: http://' + app_host + ':' + app_port + app_context);
 
             // used for electron to know when express app has started
